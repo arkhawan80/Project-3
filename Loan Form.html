@@ -90,7 +90,7 @@
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Your Total Monthly Household Income $$$$</label>
                 <textarea class="form-control" id="HHIncome" rows="1"></textarea>
-                <small id="emailHelp" class="form-text text-muted">Make $5500 a month? Enter 5500.</small>
+                <small id="emailHelp" class="form-text text-muted">Make $5,500 a month? Enter 5500.</small>
               </div>
             </form>
 
@@ -109,9 +109,9 @@
               </div>
               <select class="custom-select" id="Location">
                 <option selected>Location...</option>
-                <option value="1">Farm - Rural</option>
-                <option value="2">City - Urban</option>
-                <option value="3">Burbs- Semi-Urban</option>
+                <option value="0">Farm - Rural</option>
+                <option value="1">City - Urban</option>
+                <option value="2">Burbs- Semi-Urban</option>
 
               </select>
               <div class="input-group-prepend">
@@ -137,13 +137,13 @@
           </div>
           
           <div class="input-group mb-3">
-            <select class="custom-select" id="Kids">
+            <!-- <select class="custom-select" id="Kids">
               <option selected>Kids...</option>
               <option value="1">None</option>
               <option value="2">One</option>
               <option value="3">Couple</option>
               <option value="4">Handful+</option>
-            </select>
+            </select> -->
             <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01">College Graduate?</label>
               </div>
@@ -157,8 +157,8 @@
                   </div>
                   <select class="custom-select" id="LoanTerm">
                     <option selected>Many years...</option>
-                    <option value="1">30Yr</option>
-                    <option value="2">40Yr</option>
+                    <option value="360">30Yr</option>
+                    <option value="480">40Yr</option>
                 </select>
 
             <div class="form-group">
@@ -196,10 +196,22 @@ console.log($("#Credit").val())
 console.log($("#Location").val())
 console.log($("#Gender").val())
 console.log($("#Married").val())
-console.log($("#Kids").val())
+// console.log($("#Kids").val())
 console.log($("#Graduate").val())
 console.log($("#LoanTerm").val())
 console.log($("#LoanAmount").val())
+
+var NewLoanApp = {
+    HHIncome:$("#HHIncome").val(),
+    Credit:$("#Credit").val(),
+    Location:$("#Location").val(),
+    Gender:$("#Gender").val(),
+    Married:$("#Married").val(),
+    Graduate:$("#Graduate").val(),
+    LoanTerm:$("#LoanTerm").val(),
+    LoanAmount:$("#LoanAmount").val()
+}
+console.log(NewLoanApp)
 
 })
 
