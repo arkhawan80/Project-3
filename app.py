@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path="")
 CORS(app)
 
 # Render the page
@@ -11,7 +11,14 @@ CORS(app)
 def home():
    
     # Return template and data
-    return render_template("LoanForm.html")
+    return app.send_static_file("index.html")
+
+
+@app.route('/<string:page_name>/')
+def render_static(page_name):
+    return render_template('%s' % page_name)
+
+
 
 
 #receives info from the form entry
