@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import pandas as pd
 
-app = Flask(__name__, static_url_path="")
+app = Flask(__name__, static_url_path="", template_folder='templates')
 CORS(app)
 
 # Render the page
@@ -11,12 +11,50 @@ CORS(app)
 def home():
    
     # Return template and data
-    return app.send_static_file("index.html")
+   # return app.send_static_file("index.html")
+    return render_template('index.html')
+   #return 'hello'
 
 
-@app.route('/<string:page_name>/')
-def render_static(page_name):
-    return render_template('%s' % page_name)
+# Render the page
+@app.route("/loanform")
+def loanForm():
+   
+    # Return template and data
+   # return app.send_static_file("index.html")
+ return render_template('LoanForm.html')
+
+@app.route("/LogisticRegression")
+def LogisticRegression():
+   
+    # Return template and data
+   # return app.send_static_file("index.html")
+ return render_template('LogisticRegression.html')
+
+@app.route("/dtree")
+def dtree():
+    # Return template and data
+   # return app.send_static_file("index.html")
+    return render_template('decision.html')
+
+@app.route("/AboutUs")
+def AboutUs():
+   
+    # Return template and data
+   # return app.send_static_file("index.html")
+ return render_template('AboutUs.html')
+ 
+@app.route("/OtherProjects")
+def OtherProjects():
+   
+    # Return template and data
+   # return app.send_static_file("index.html")
+ return render_template('OtherProjects.html')
+
+
+# @app.route('/<string:page_name>/')
+# def render_static(page_name):
+#  return render_template('%s' % page_name)
 
 
 
