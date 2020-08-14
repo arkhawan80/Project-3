@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import pandas as pd
 
-app = Flask(__name__, static_url_path="", template_folder='templates')
+app = Flask(__name__, static_url_path="/static", template_folder='templates')
 CORS(app)
 
 # Render the page
