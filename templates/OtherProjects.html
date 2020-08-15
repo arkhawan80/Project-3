@@ -56,11 +56,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="/loanform">Loan Form</a></li>
-        <li><a href="/LogisticRegression">Logistic Regression Model</a></li>
-        <li><a href="/dtree">Decision Tree Model</a></li>
+        <li><a href="/loanform">Loan Form</a></li>     
+        <li><a href="/confusion">Confusion Matrix</a></li>
         <li><a href="/OtherProjects">Other Projects</a></li>
-        <li><a href="/AboutUs">About us</a></li>
+     
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Thank you</a></li>
@@ -78,12 +77,24 @@
     </div>
    
     <div class="col-sm-6 text-left"> 
-      <h1>Crime Forcasting Model:Lessons learned</h1>
-            <h3>Our dataset was too broad, we were looking at crimes in an entire county. With more time we would be able to use city specific data against Census specific locations in a city.</h3> 
+      <h1><b>Crime Prediction Model:</b></h1>
+            
+        <h1><i><B>Crime Forecasting via Machine Learning:</B></i></h1>
+          <h2><i>Predictions based on Age, Population Density, and Poverty</i></h2>
+          <h2><b>Data Sources:</b></h2>
+            <h3>Census.Gov and Countyhealthrankings.org(FBI CrimeAPI)</h3>
+            <h2><b>Cleanup:</b></h2>
+            <h3>1 million Crimes in Chicago in 10 years with Geo Tags (location)</h3>
+              <h3>3000+ Counties of Violent crimes across US (National)</h3>
+                  <h2><b>Challenges:</b></h2>
+                  <h3>Data set too large of an area to produce valuble statistics for Machine Learning.</h3>
+                      <h2><b>Further Investigation:</b></h2>
+                      <h3>Provided with additional resources we could pull the FIPS(Census) Location tags based on the lon&lat location of crimes in Chicago and build a better model.
+                      </h3>
         
-        <p>Multi-variable regression model for Crime Rate, Population Density, Poverty, and Age. </p>
-        <h3>R^2 = 0.177</h3>
-        <h3>PearsonR = 0.00736</h3>
+        
+        <h3>R^2 = 0.177(Very low Correlation values)</h3>
+        
         <img src="/static/images/CrimeLinRegression.png" class="Left" style="padding-left: 50px; padding-right: 50px; padding-bottom: 20px">
         <img src="/static/images/CrimeLinRegression2.png" class="Left" style="padding-left: 50px; padding-right: 50px; padding-bottom: 20px">
 

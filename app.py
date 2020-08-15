@@ -24,25 +24,13 @@ def loanForm():
    # return app.send_static_file("index.html")
  return render_template('LoanForm.html')
 
-@app.route("/LogisticRegression")
+@app.route("/confusion")
 def LogisticRegression():
    
     # Return template and data
    # return app.send_static_file("index.html")
- return render_template('LogisticRegression.html')
+ return render_template('confusion.html')
 
-@app.route("/dtree")
-def dtree():
-    # Return template and data
-   # return app.send_static_file("index.html")
-    return render_template('decision.html')
-
-@app.route("/AboutUs")
-def AboutUs():
-   
-    # Return template and data
-   # return app.send_static_file("index.html")
- return render_template('AboutUs.html')
  
 @app.route("/OtherProjects")
 def OtherProjects():
