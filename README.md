@@ -1,5 +1,5 @@
 # Project Name: Loan Application Prediction Machine Learning
-project we start with: Crime Forecasting via Machine Learning
+project we started with: Crime Forecasting via Machine Learning
     by county based on Age, Population Density, and Poverty.
     
 Data Sources: 
