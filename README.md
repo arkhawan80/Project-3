@@ -1,26 +1,37 @@
 Note: For easy reading and format, please read row readme file.
 
 Project Name: Loan Application Prediction Machine Learning
+
 Project Intro/Objective: 
 Through this project, we try to develop multiple machine learning models to train and test the data set we use in the project and get the most accurate and usable outcome that would be practically beneficial for both businesses and public to predict eligibility and acceptance of loan applications.
+
 Methods Used: 
 o	Inferential Statistics
 o	Machine Learning 
 o	Data Visualization 
 o	Predictive Modeling 
 o	etc.
+
 Technologies: 
 o	Python 
 o	Pandas, jupyter 
 o	HTML, CSS, Bootstrap
 o	 JavaScript
 o	 Flask application
-Project Description: 
-•	The project is "Loan Prediction Machine Learning modeling" that counts eligibility to get accepted for a loan by Income, Gender, Location, Credit Status, Marital Status, Education, Loan Term and Loan Amount. 
+
+Project Description:
+
+•	The project is "Loan Prediction Machine Learning modeling" that counts eligibility to get accepted for a loan by Income, Gender, Location, Credit Status, Marital Status, Education, Loan Term and Loan Amount.
+
 •	Data Source: Kaggle.com: Loan Prediction Application 
-•	Data Cleanup: 500 loans for predictive models Binary Encoding, Numerical Encoding, DropNa, 
-•	Challenges: Finding a solid data set and selecting machine learning models. 
+
+•	Data Cleanup: 500 loans for predictive models Binary Encoding, Numerical Encoding, DropNa
+
+Challenges:
+Finding a solid data set and selecting machine learning models. 
+
 •	Further Investigation: Increasing data set and adding applicant credit score to the model.
+
 •	Take Away and summary: 
 o	Income, Credit History and Loan Amount were strongest correlation. 
 o	Logistic regression is best model to predict loan prediction for the dataset. 
