@@ -4,7 +4,7 @@ Project Intro/Objective:
 Through this project, we  try to develop multiple machine learning models to train and test the data set we use in the project and get the most accurate and usuable outcome that would be practically benificial for both buisnesses and public to predict eleigibility and acceptance of loan applications. 
 
 Methods Used:
-Inferential Statistics
+Inferential Statistics-
 Machine Learning
 Data Visualization
 Predictive Modeling
