@@ -1,3 +1,5 @@
+Note: For easy reading and format, please read row readme file.
+
 Project Name: Loan Application Prediction Machine Learning
 Project Intro/Objective: 
 Through this project, we try to develop multiple machine learning models to train and test the data set we use in the project and get the most accurate and usable outcome that would be practically beneficial for both businesses and public to predict eligibility and acceptance of loan applications.
